@@ -1,5 +1,5 @@
 import logging
-from ableton.v2.control_surface import ControlSurface 
+from ableton.v3.control_surface import ControlSurface 
 
 logger = logging.getLogger(__name__)
 
