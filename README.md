@@ -30,7 +30,7 @@ python install.py
 
 If everything is set up properly, this will create a new directory `LaunchpadSimple` in user User Library's `Remote Scripts` subdirectory and copy over all the relevant files to use this remote script with Ableton Live.
 
-Start Ableton Live. If it was already running, quit it and start again.
+Start Ableton Live. 
 
 Open Live's Preferences and go to the Link/MIDI tab. 
 
@@ -55,3 +55,11 @@ Assuming the path to the log file is the one from this example, we can view the 
 ```
 tail -f /c/Dokumente\ und\ Einstellungen/wieka/Anwendungsdaten/Ableton/Live\ 11.3.21/Preferences/Log.txt | grep -oG "LS_LOG.*"
 ```
+
+### Updating
+
+While working on the remote scripts, when you want to test your latest changes in Ableton Live:
+
+* On the command line, run `python install.py`
+* In Live, go to Preferences > Link/MIDI
+* In the MIDI remote surfaces list, switch the entry where it says `LaunchpadSimple` to some other entry in the pulldown menu, then back to `LaunchpadSimple`

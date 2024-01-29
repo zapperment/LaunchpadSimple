@@ -11,7 +11,7 @@ def extract_rgb(color_value):
 	return (red, green, blue)
 
 def log(message):
-	logger.info("LP_LOG " + message)
+	logger.info("LS_LOG " + message)
 
 class LaunchpadSimple(ControlSurface):
 
